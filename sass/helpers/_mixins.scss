@@ -1,0 +1,16 @@
+@mixin responsivo($tipo) {
+    @if $tipo == phone {
+        @media (max-width: 420px) {
+           @content;
+       }
+    }@else if $tipo == tab-port {
+        @media (max-width: 768px) {
+            @content;
+        }
+    }@else if $tipo == tab-land {
+        @media (max-width: 1024px) {
+            @content;
+            
+           }
+       }  
+   }
